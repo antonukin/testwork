@@ -19,17 +19,17 @@ string[] GetString()
 return words;
 }
 
-void PrintArray(string[] statement)
+void PrintArray(string[] words)
 {
-    for (int i = 0; i < statement.Length; i++)
+    for (int i = 0; i < words.Length; i++)
     {
-        if(statement[i].Length < 4)
+        if(words[i].Length < 4)
         {
-            Console.Write($"{statement[i]} ");
+            Console.Write($"{words[i]} ");
         }
         else continue;
     }
 }
 
-string[] newWords = GetString();
-PrintArray(newWords);
+string[] text = GetString();
+PrintArray(text);
